@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brenton's Article Scraper</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Play|Press+Start+2P" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+
+    <div class="head-img">
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand">Article Scraper</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">
+                            <button id="home-btn" class="btn btn-default">Home</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button id="saved-btn" class="btn btn-default">Saved Articles</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/scrape">
+                            <button id="scrape-btn" class="btn btn-default">Scrape New Articles</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div id="wrapper">
+        <h1 id="article-title">Articles</h1>
+        <div id="articles"></div>
+        <div id="notes"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer" align="center">
+        <div class="footer-container">
+            <span class="foot" id="copyright">Created by Brenton Jenkins, 2018</span>
+            <span id="divider">|</span>
+            <a class="repo" target="_blank" href="https://github.com/Mondo114">GitHub Repo</a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+body {
+    background-image: url("../img/grid3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    border: 3px solid rgb(76, 243, 104);
+}
+
+.head-img {
+    height: 200px;
+    width: 100%;
+    background-image: url("../img/grid2.jpg");
+    background-position: 50% 42%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid rgb(76, 243, 104);
+}
+
+.navbar {
+    background-color: black;
+    border-bottom: 3px solid rgb(76, 243, 104);
+}
+
+.navbar-default .navbar-brand {
+    color: rgb(76, 243, 104);
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: rgb(76, 243, 104);
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+.container-fluid {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#home-btn,
+#saved-btn,
+#scrape-btn {
+    color: black;
+}
+
+#home-btn:hover,
+#saved-btn:hover,
+#scrape-btn:hover {
+    color: red;
+    background-color: white;
+}
+
+/* ======================================= */
+
+#wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border-left: 3px solid rgb(76, 243, 104);
+    border-right: 3px solid rgb(76, 243, 104);
+    border-bottom: 3px solid rgb(76, 243, 104);
+    font-family: 'Play', sans-serif;
+}
+
+#article-title {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(76, 243, 104);
+    background-color: black;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid rgb(76, 243, 104);
+    border-bottom: 3px solid rgb(76, 243, 104);
+}
+
+#articles {
+    display: inline-block;
+    overflow: auto;
+    width: 60%;
+    height: 500px;
+    color: black;
+    font-size: 18px;
+}
+
+.article-block {
+    background-color: rgb(221, 216, 216);
+    padding-bottom: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(76, 243, 104);
+    font-size: 24px;
+}
+
+.article-img {
+    width: 280px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: 0 auto;
+    display: block;
+    background-color: black;
+}
+
+#articles a {
+    color: black;
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+}
+
+#articles a:hover {
+    color: red;
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+}
+
+#notes {
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 20px;
+    margin: 20px;
+    background-color: rgb(221, 216, 216);
+    border-radius: 5px;
+    border: 3px solid rgb(76, 243, 104);
+    text-align: center;
+}
+
+#notes h2 {
+    color: black;
+    margin: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 36px;
+    font-size: 24px;
+    border: 1px solid black;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+p {
+    margin: 20px;
+}
+
+#savenote {
+    color: black;
+    background-color: white;
+    font-family: 'Press Start 2P', cursive;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+/* ======================================= */
+
+.footer {
+    font-family: 'Press Start 2P', cursive;
+    bottom: 0;
+    padding: 13px;
+    margin-top: 40px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    border-top: 3px solid rgb(76, 243, 104);
+    width: 100%;
+    z-index: 999;
+    color: rgb(76, 243, 104);
+}
+
+#divider {
+    color: white;
+}
