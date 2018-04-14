@@ -10,7 +10,7 @@ $.getJSON("/articles", function (data) {
   });
   
   
-  // Whenever someone clicks a p tag
+  // Whenever someone clicks the write note button
   $(document).on("click", ".write-note", function () {
     // Empty the notes from the note section
     $("#notes").empty();
@@ -28,7 +28,7 @@ $.getJSON("/articles", function (data) {
       .then(function (data) {
         console.log(data);
         // The title of the article
-        $("#notes").append("<h2>" + data.title + "</h2>");
+        $("#notes").append("<p>" + data.title + "</p>");
         // An input to enter a new title
         $("#notes").append("<input id='titleinput' name='title' placeholder='Note Title' >");
         // A textarea to add a new note body
@@ -91,5 +91,11 @@ $(document).on("click", "#scrape-btn", function (event) {
       location.reload();
       // alert("You have scraped " + data.length + " new articles.");
       alert("Article scraping successful.");
+    });
+});
+
+// Saved Notes button
+$("#saved-btn").on("click", function (event) {
+    $.get("/notes", function (data) {
     });
 });

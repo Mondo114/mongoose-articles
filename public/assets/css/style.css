@@ -24,13 +24,13 @@ body {
 
 .navbar-default .navbar-brand {
     color: rgb(76, 243, 104);
-    font-size: 26px;
+    font-size: 24px;
     padding-top: 20px;
 }
 
 .navbar-default .navbar-brand:hover {
     color: rgb(76, 243, 104);
-    font-size: 26px;
+    font-size: 24px;
     padding-top: 20px;
 }
 
@@ -42,6 +42,7 @@ body {
 #saved-btn,
 #scrape-btn {
     color: black;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 #home-btn:hover,
@@ -49,6 +50,7 @@ body {
 #scrape-btn:hover {
     color: red;
     background-color: white;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 /* ======================================= */
@@ -71,8 +73,8 @@ body {
     background-color: black;
     padding: 20px;
     margin-top: 40px;
-    border-top: 3px solid rgb(76, 243, 104);
-    border-bottom: 3px solid rgb(76, 243, 104);
+    border: 3px solid rgb(76, 243, 104);
+    border-radius: 5px;
 }
 
 #articles {
@@ -85,7 +87,7 @@ body {
 }
 
 .article-block {
-    background-color: rgb(144, 181, 236);
+    background-color: black;
     padding-bottom: 20px;
     margin: 20px;
     border-radius: 5px;
@@ -93,10 +95,16 @@ body {
     font-size: 24px;
 }
 
+p {
+    color: rgb(76, 243, 104);
+    border-bottom: 3px solid rgb(76, 243, 104);
+    padding: 10px;
+}
+
 .article-img {
-    width: 280px;
+    width: 300px;
     border-radius: 5px;
-    border: 3px solid black;
+    border: 3px solid rgb(76, 243, 104);
     margin: 0 auto;
     display: block;
     background-color: black;
@@ -116,6 +124,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 14px;
     text-align: center;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 #articles a:hover {
@@ -131,6 +140,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 14px;
     text-align: center;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 .write-note {
@@ -148,6 +158,7 @@ body {
     font-size: 14px;
     text-align: center;
     cursor: pointer;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 .write-note:hover {
@@ -165,6 +176,7 @@ body {
     font-size: 14px;
     text-align: center;
     cursor: pointer;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 #notes {
@@ -174,15 +186,16 @@ body {
     margin-top: 20px;
     margin-left: -6px;
     padding-bottom: 20px;
-    background-color: rgb(144, 181, 236);
+    background-color: black;
     border-radius: 5px;
     border: 3px solid rgb(76, 243, 104);
     text-align: center;
 }
 
-#notes h2 {
-    color: black;
-    margin: 20px;
+#notes p {
+    background-color: black;
+    color: rgb(76, 243, 104);
+    font-size: 24px;
 }
 
 #savenote {
@@ -199,6 +212,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 14px;
     text-align: center;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 #savenote:hover {
@@ -215,28 +229,20 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 14px;
     text-align: center;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 input {
-    display: block;
-    width: 100%;
-    background-color: white;
-    height: 36px;
     font-size: 24px;
-    border: 1px solid black;
+    border: 2px solid rgb(76, 243, 104);
 }
 
 textarea {
-    display: block;
-    width: 100%;
-    background-color: white;
+    width: 274px;
+    margin-top: 10px;
     height: 200px;
     font-size: 18px;
-    border: 1px solid black;
-}
-
-p {
-    margin: 20px;
+    border: 2px solid rgb(76, 243, 104);
 }
 
 /* ======================================= */
@@ -257,4 +263,30 @@ p {
 
 #divider {
     color: white;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(76, 243, 104); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(97, 220, 121); 
+}
+
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+    background: rgb(97, 200, 121); 
 }
