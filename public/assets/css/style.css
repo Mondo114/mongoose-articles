@@ -53,7 +53,7 @@ body {
 
 /* ======================================= */
 
-#wrapper {
+.wrapper {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -62,6 +62,7 @@ body {
     border-right: 3px solid rgb(76, 243, 104);
     border-bottom: 3px solid rgb(76, 243, 104);
     font-family: 'Play', sans-serif;
+    border: 3px solid rgb(76, 243, 104);
 }
 
 #article-title {
@@ -77,14 +78,14 @@ body {
 #articles {
     display: inline-block;
     overflow: auto;
-    width: 60%;
-    height: 500px;
+    width: 100%;
+    height: 1000px;
     color: black;
     font-size: 18px;
 }
 
 .article-block {
-    background-color: rgb(221, 216, 216);
+    background-color: rgb(144, 181, 236);
     padding-bottom: 20px;
     margin: 20px;
     border-radius: 5px;
@@ -132,12 +133,48 @@ body {
     text-align: center;
 }
 
+.write-note {
+    color: black;
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.write-note:hover {
+    color: red;
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
 #notes {
-    display: inline-block;
-    width: 30%;
+    display: none;
+    float: top;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -6px;
     padding-bottom: 20px;
-    margin: 20px;
-    background-color: rgb(221, 216, 216);
+    background-color: rgb(144, 181, 236);
     border-radius: 5px;
     border: 3px solid rgb(76, 243, 104);
     text-align: center;
@@ -146,6 +183,38 @@ body {
 #notes h2 {
     color: black;
     margin: 20px;
+}
+
+#savenote {
+    color: black;
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+}
+
+#savenote:hover {
+    color: red;
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
 }
 
 input {
@@ -168,16 +237,6 @@ textarea {
 
 p {
     margin: 20px;
-}
-
-#savenote {
-    color: black;
-    background-color: white;
-    font-family: 'Press Start 2P', cursive;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px 30px;
-    margin-top: 20px;
 }
 
 /* ======================================= */
