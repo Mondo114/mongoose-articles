@@ -94,8 +94,8 @@ $(document).on("click", "#scrape-btn", function (event) {
     });
 });
 
-// Saved Notes button
-$("#saved-btn").on("click", function (event) {
-    $.get("/notes", function (data) {
-    });
-});
+// // Saved Notes button
+// $("#saved-btn").on("click", function (event) {
+//     $.get("/notes", function (data) {
+//     });
+// });
