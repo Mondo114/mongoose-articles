@@ -43,12 +43,12 @@ mongoose.connect(MONGODB_URI);
 
 // Routes
 
-app.get('/', function (req, res) {
-    res.send(index.html);
-});
+// app.get('/', function (req, res) {
+//     res.send(index.html);
+// });
 
 app.get('/notes', function (req, res) {
-    res.send(notes.html);
+    res.sendFile(__dirname + "/public/notes.html");
 });
 
 newArticleArray = [];

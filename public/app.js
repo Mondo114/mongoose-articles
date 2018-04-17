@@ -1,6 +1,7 @@
 // Grab the articles as a json
 $.getJSON("/articles", function (data) {
     // For each one
+    $("#articles").empty();
     for (var i = 0; i < data.length; i++) {
       // Display the apropos information on the page
       $("#articles").append(
@@ -76,7 +77,6 @@ $.getJSON("/articles", function (data) {
     $("#titleinput").val("");
     $("#bodyinput").val("");
   });
-
   
 // Home button
 $("#home-btn").on("click", function () {
@@ -94,8 +94,8 @@ $(document).on("click", "#scrape-btn", function (event) {
     });
 });
 
-// // Saved Notes button
-// $("#saved-btn").on("click", function (event) {
-//     $.get("/notes", function (data) {
-//     });
-// });
+// Saved Notes button
+$("#saved-btn").on("click", function (event) {
+    $.get("/notes", function (data) {
+    });
+});
